@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E5E72"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <ImageView
+                android:id="@+id/logoImage"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/hashbox_logo" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                android:background="@android:drawable/editbox_background"
+                android:hint="Username"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="24dp"
+                android:background="@android:drawable/editbox_background"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="LOGIN"
+                android:textColor="#FFFFFF" />
+
+
+            <Button
+                android:id="@+id/superButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Go to Second Activity"
+                android:layout_marginTop="16dp" />
+
+
+            <Button
+                android:id="@+id/superButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Go to Third Activity" />
+
+
+            <Button
+                android:id="@+id/superButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Go to Fourth Activity" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
